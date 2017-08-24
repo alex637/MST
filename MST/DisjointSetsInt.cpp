@@ -47,7 +47,7 @@ void DisjointSetsInt::unite(int x, int y)
 		ptr->p = p2;
 		addresses[x] = ptr;
 		if (p1->rank == p2->rank)
-			p1->rank++;
+			p2->rank++;
 		delete p1;
 	}
 }
